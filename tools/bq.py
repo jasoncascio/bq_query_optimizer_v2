@@ -12,7 +12,6 @@ def get_query_job(query: str, dry_run: bool = True) -> bigquery.QueryJob:
     return client.query(query, job_config=job_config)
 
 
-
 def get_scan_cost(size_mb: float) -> float:
     """
     Calculates the cost of scanning data in BigQuery based on the MB scanned in USD $
